@@ -1,5 +1,4 @@
-# scp_private_apps (Resource)
-## THIS IS BETA RELEASE 
+# scp_private_app (Resource in beta version)
 ### THIS PROVIDER IS AVAILABLE ONLY FOR SPLUNK CLOUD VICTORIA EXPERIENCE
 
 Default parallelism for terraform operations is 10. Due to the sequential nature of app installation, it is recommended to use the --parallelism=1 flag when applying Terraform changes with this resource (or at least some number < 10).
