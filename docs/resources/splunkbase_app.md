@@ -1,14 +1,12 @@
-# scp_splunkbase_apps (Resource)
-## THIS IS BETA RELEASE
-### IT IS ONLY APPLICABLE FOR SPLUNK VICTORIA CLOUD EXPERIENCE 
+# scp_splunkbase_app (Resource in beta version)
+### THIS PROVIDER IS AVAILABLE ONLY FOR SPLUNK CLOUD VICTORIA EXPERIENCE
 Manages Splunkbase apps in Splunk Cloud Platform. For detailed attribute requirements, refer to the [Splunk Cloud documentation](https://docs.splunk.com/Documentation/SplunkCloud/9.3.2408/Config/ManageSplunkbaseApps) and the ACS API.
 Default parallelism for terraform operations is 10. Due to the sequential nature of app installation, it is recommended to use the --parallelism=1 flag when applying Terraform changes with this resource (or at least some number < 10).
 
-Due to the nature of app installation, it is recommended to use the --parallelism=1 flag when applying Terraform changes with this resource.
 ## Example Usage
 
 ```terraform
-resource "scp_splunkbase_apps" "example" {
+resource "scp_splunkbase_app" "example" {
   name            = "Splunk_TA_nix"
   version         = "8.6.0"
   splunkbase_id   = "833"
