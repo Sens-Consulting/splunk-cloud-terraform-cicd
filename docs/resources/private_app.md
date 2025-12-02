@@ -6,7 +6,7 @@ Default parallelism for terraform operations is 10. Due to the sequential nature
 ## Example Usage
 
 ```terraform
-resource "scp_private_apps" "example" {
+resource "scp_private_app" "example" {
   name         = "my-private-app"
   filename     = "/path/to/app.tgz"
   acs_legal_ack = "Y"
